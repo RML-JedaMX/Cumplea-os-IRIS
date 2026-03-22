@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CUMPLEAÑOS DE IRIS - Arena Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Work_Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed": "#330000",
+                        "on-surface": "#e5e2e1",
+                        "tertiary-container": "#4e5051",
+                        "surface-variant": "#353535",
+                        "surface-container-highest": "#353535",
+                        "on-secondary-fixed": "#221b00",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container": "#20201f",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffd700",
+                        "secondary-fixed": "#ff4d4d",
+                        "on-primary-fixed-variant": "#800000",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary": "#c6c6c7",
+                        "secondary": "#FFD700",
+                        "error-container": "#93000a",
+                        "inverse-on-surface": "#313030",
+                        "outline": "#8c9387",
+                        "primary-fixed-dim": "#ccac00",
+                        "surface": "#111111",
+                        "on-secondary": "#3a3000",
+                        "surface-tint": "#ffd700",
+                        "primary": "#ff3333",
+                        "surface-bright": "#393939",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-tertiary-container": "#c2c2c3",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "background": "#111111",
+                        "primary-container": "#800000",
+                        "error": "#ffb4ab",
+                        "on-tertiary": "#2f3131",
+                        "on-secondary-container": "#725f00",
+                        "outline-variant": "#42493e",
+                        "surface-container-low": "#1c1b1b",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#cc0000",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary-container": "#ffb3b3",
+                        "surface-dim": "#111111",
+                        "on-surface-variant": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#544600",
+                        "on-background": "#e5e2e1",
+                        "secondary-container": "#ffd700",
+                        "on-error": "#690005",
+                        "secondary-fixed-dim": "#ccac00"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                    animation: {
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'float-particle': 'float-particle 20s linear infinite',
+                        'light-sweep': 'light-sweep 8s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(255, 51, 51, 0.4), 0 0 40px rgba(255, 51, 51, 0.2)' },
+                            '50%': { boxShadow: '0 0 40px rgba(255, 51, 51, 0.8), 0 0 60px rgba(255, 51, 51, 0.4)' },
+                        },
+                        'float-particle': {
+                            '0%': { transform: 'translateY(0) translateX(0)', opacity: 0 },
+                            '10%': { opacity: 0.4 },
+                            '90%': { opacity: 0.4 },
+                            '100%': { transform: 'translateY(-100vh) translateX(50px)', opacity: 0 },
+                        },
+                        'light-sweep': {
+                            '0%, 100%': { opacity: 0.2, transform: 'translateX(-50%) rotate(-45deg)' },
+                            '50%': { opacity: 0.5, transform: 'translateX(50%) rotate(-45deg)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+        }
+        .stadium-texture {
+            background-color: #0a0a0a;
+            background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.8)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuB68GqhVmsmLRD8FbGnEQKzqaWfNs4MBhCoo3mJhB6OJpYQkct_pYHTblWFFIHoxnKuIsvp6FMRyBfoqR6fQcXUaCY7vSJLBB3ag_tPzYDc9wd09R1i8wasjaTOXaAcpJUPs42bhVUO-Jm5taHZwgHYbjWAVlfWsmbQ_lT_F2eF5ZxSr8WvKnC2aamwf1WGrfDnhXACzydXlTYcKFKSWnJoP6k5NTLRC_mO3wX-j3yuzM8A6_4JirF5ClQeCevBmGWllac0tRpaRmA);
+            background-attachment: fixed;
+            background-size: cover
+        }
+        .grass-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 86c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm76-52c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-3-26c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zM42 73c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm54 56c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zM26 46c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm54 20c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zM16 35c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm18 60c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm76-60c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm-8 56c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm-44-60c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm-28 20c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm40 12c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm20 40c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zM10 20c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm80 40c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm-40-20c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm-40 40c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z' fill='%23ffffff' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E")
+        }
+        .pitch-grain {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.08
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08)
+        }
+        @keyframes float-bounce {
+            0%, 100% { transform: translateY(0) rotate(0deg); } 
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+        .floating-ball {
+            animation: float-bounce 6s ease-in-out infinite
+        }
+        .floating-ball:nth-child(even) {
+            animation-duration: 8s;
+            animation-delay: -2s
+        }
+        .comic-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuCHXj9v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v0v=s0);
+            background-size: cover;
+            background-position: center
+        }
+        .progress-bar-glow {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6)
+        }
+        .modal-hidden {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden
+        }
+        /* Neon Effects */
+        .neon-text-red {
+            text-shadow: 0 0 10px rgba(255, 51, 51, 0.8), 0 0 20px rgba(255, 51, 51, 0.4), 0 0 30px rgba(255, 51, 51, 0.2);
+        }
+        .neon-text-gold {
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+        /* Light Leak Layers */
+        .light-leak {
+            background: radial-gradient(circle at 50% 50%, rgba(255, 51, 153, 0.15) 0%, transparent 70%);
+            mix-blend-mode: screen;
+        }
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        /* Stadium Spotlight Bars */
+        .spotlight-beam {
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            height: 150vh;
+            width: 300px;
+            position: absolute;
+            top: -25%;
+            filter: blur(60px);
+        }
+    </style>
+</head>
+<body class="stadium-texture text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container relative">
+<!-- Background Atmosphere Layers -->
+<div class="fixed inset-0 grass-overlay pointer-events-none z-0"></div>
+<div class="fixed inset-0 pitch-grain pointer-events-none z-0"></div>
+<div class="fixed inset-0 pointer-events-none z-[1] overflow-hidden">
+<!-- Light Leaks -->
+<div class="absolute -top-1/4 -left-1/4 w-[100vw] h-[100vw] light-leak bg-magenta-500/10"></div>
+<div class="absolute -bottom-1/4 -right-1/4 w-[100vw] h-[100vw] light-leak bg-yellow-500/10" style="background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.12) 0%, transparent 70%);"></div>
+<!-- Moving Spotlight Beams -->
+<div class="spotlight-beam animate-light-sweep left-1/4 opacity-20"></div>
+<div class="spotlight-beam animate-light-sweep right-1/4 opacity-20" style="animation-delay: -4s; background: linear-gradient(90deg, transparent, rgba(255, 51, 153, 0.1), transparent);"></div>
+</div>
+<!-- Floating Particles Script Container -->
+<div class="fixed inset-0 pointer-events-none z-[2]" id="particle-container"></div>
+<script>
+    function createParticles() {
+        const container = document.getElementById('particle-container');
+        const particleCount = 40;
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle animate-float-particle';
+            const size = Math.random() * 4 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.top = `${Math.random() * 100}vh`;
+            particle.style.animationDelay = `${Math.random() * 20}s`;
+            particle.style.animationDuration = `${15 + Math.random() * 15}s`;
+            particle.style.opacity = Math.random() * 0.5;
+            // Mixed colors for particles
+            const colors = ['rgba(255,255,255,0.4)', 'rgba(255,215,0,0.3)', 'rgba(255,51,153,0.3)'];
+            particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+            container.appendChild(particle);
+        }
+    }
+    createParticles();
+</script>
+<!-- Entrance Modal -->
+<div class="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden transition-opacity duration-500" id="welcomeModal">
+<div class="absolute inset-0 bg-black">
+<img alt="Dramatic full-page cinematic background of female luchadoras in a ring with pink and gold lighting" class="w-full h-full object-cover opacity-60 scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4FZMot5vpKPyvXnwQTfILHp9Q3BrdFIes9rehcaVQqMO4jEXggB2toDkOVi_ZfRONS9ln1yOwe75JUWyNpLLz4JM0XuArvlqeQ3MUYM5_o3oRtQ7xPDSwpwugfRj008azxv0s_mLMO_tJSHoIfEJBZFgldDLPpJJ1olnLRS9sU4HHRC3ifxRbPdgfAL8JO8Kh7rBjdX27cfvPScAnL8WFco-GZmJWhz4tuKTXnCx2F9UkryPrWMqhvwSrwRx1Z5u1AZZXYqCMZ-0"/>
+<!-- Dramatic Overlays -->
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/80"></div>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-secondary/30 mix-blend-color-dodge"></div>
+<div class="absolute top-0 left-1/4 w-1/2 h-full bg-white/5 blur-[100px] -rotate-12 pointer-events-none"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl">
+<h1 class="font-headline font-black italic text-6xl md:text-9xl tracking-tighter text-primary mb-2 neon-text-red">
+            IRIS HERNANDEZ
+        </h1>
+<p class="font-label font-bold italic text-xl md:text-3xl text-secondary-fixed tracking-[0.2em] uppercase mb-12 drop-shadow-md neon-text-gold">
+            LA TUZA DE LA EDUCACIÓN
+        </p>
+<button class="group relative px-16 py-6 bg-primary text-white font-headline font-black italic text-2xl md:text-3xl rounded-full overflow-hidden animate-pulse-glow transition-all duration-300 border-2 border-primary/30" onclick="closeModal()">
+<span class="relative z-10">ENTRAR</span>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+</button>
+</div>
+</div>
+<script>
+    function closeModal() {
+        document.getElementById('welcomeModal').classList.add('modal-hidden');
+        document.body.style.overflow = 'auto';
+    }
+    document.body.style.overflow = 'hidden';
+</script>
+<!-- Floating Soccer Balls -->
+<div class="fixed inset-0 pointer-events-none z-30 overflow-hidden">
+<span class="material-symbols-outlined floating-ball absolute text-primary/10 text-2xl top-[15%] left-[10%]">sports_soccer</span>
+<span class="material-symbols-outlined floating-ball absolute text-primary/10 text-3xl top-[40%] right-[15%]">sports_soccer</span>
+<span class="material-symbols-outlined floating-ball absolute text-primary/10 text-xl bottom-[20%] left-[20%]">sports_soccer</span>
+<span class="material-symbols-outlined floating-ball absolute text-primary/10 text-2xl bottom-[30%] right-[5%]">sports_soccer</span>
+</div>
+<!-- Scoreboard Countdown -->
+<section class="pt-28 pb-12 relative overflow-hidden" id="program">
+<div class="max-w-4xl mx-auto px-6 relative z-10">
+<div class="bg-black/90 border-4 border-primary/40 p-8 md:p-12 shadow-[0_0_80px_rgba(255,51,51,0.2)] relative backdrop-blur-md">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-primary-fixed to-primary"></div>
+<div class="text-center mb-8">
+<h3 class="font-label uppercase tracking-[0.5em] text-primary-fixed text-xs neon-text-gold">CUENTA REGRESIVA: 9 DE ABRIL, 2026</h3>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="text-center">
+<div class="font-headline font-black text-6xl md:text-8xl text-primary mb-2 neon-text-red" id="days">000</div>
+<div class="font-label uppercase tracking-widest text-primary-fixed text-sm">Días</div>
+</div>
+<div class="text-primary/40 font-headline font-black text-4xl hidden md:block">:</div>
+<div class="text-center">
+<div class="font-headline font-black text-6xl md:text-8xl text-primary mb-2 neon-text-red" id="hours">00</div>
+<div class="font-label uppercase tracking-widest text-primary-fixed text-sm">Horas</div>
+</div>
+<div class="text-primary/40 font-headline font-black text-4xl hidden md:block">:</div>
+<div class="text-center">
+<div class="font-headline font-black text-6xl md:text-8xl text-primary mb-2 neon-text-red" id="minutes">00</div>
+<div class="font-label uppercase tracking-widest text-primary-fixed text-sm">Minutos</div>
+</div>
+</div>
+<div class="mt-8 text-center border-t border-white/10 pt-6">
+<span class="font-label uppercase text-xs tracking-[0.3em] text-on-surface-variant">El reloj del campeonato está corriendo</span>
+</div>
+</div>
+</div>
+</section>
+<script>
+    function updateCountdown() {
+        const targetDate = new Date('April 9, 2026 00:00:00').getTime();
+        const now = new Date().getTime();
+        const difference = targetDate - now;
+
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+
+        document.getElementById('days').innerText = days.toString().padStart(3, '0');
+        document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+    }
+    setInterval(updateCountdown, 60000);
+    updateCountdown();
+</script>
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex flex-col md:flex-row justify-between items-center px-6 py-4 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
+<div class="flex items-center gap-6 mb-4 md:mb-0">
+<div class="text-2xl font-black italic tracking-tighter text-primary-fixed font-headline uppercase neon-text-gold">CUMPLEAÑOS DE IRIS</div>
+<div class="hidden sm:flex items-center gap-4 bg-surface-container-high/50 rounded-full px-4 py-1.5 border border-white/10">
+<button class="material-symbols-outlined text-primary-fixed text-sm hover:scale-110 transition-transform">play_arrow</button>
+<div class="flex flex-col">
+<div class="w-32 h-1 bg-white/10 rounded-full overflow-hidden">
+<div class="w-1/3 h-full bg-primary progress-bar-glow"></div>
+</div>
+<span class="text-[8px] uppercase tracking-tighter text-on-surface-variant/60 mt-0.5">Himno de la Arena - En Vivo</span>
+</div>
+<span class="text-[10px] font-label text-primary-fixed/80">01:45</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label tracking-widest uppercase text-xs text-primary-fixed border-b-2 border-primary-fixed pb-1" href="#arena">Arena</a>
+<a class="font-label tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#program">Programa</a>
+<a class="font-label tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#ubicacion">Ubicación</a>
+<a class="font-label tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#rsvp">Asistencia</a>
+</nav>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined hover:text-primary-fixed transition-colors duration-300 cursor-pointer" style="font-variation-settings: 'FILL' 1;">sports_kabaddi</span>
+<span class="material-symbols-outlined hover:text-primary-fixed transition-colors duration-300 cursor-pointer" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b via-transparent z-10 from-black/40 to-black/90"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-magenta-500/5 via-transparent to-yellow-500/5 pointer-events-none z-[11]"></div>
+<img alt="Campo de fútbol arena" class="absolute inset-0 w-full h-full object-cover opacity-60 scale-110 blur-[1px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByWkK9nZdf_MfXPIudfthfh0EhdLX-VvFotkBizDVWMZU79llvRpjlJJNCygVenAWFaoTg-npSwMPyP3cEMzOMeljoOUkx2o-BMElNyihXAgzbY8Cinr6ms-OLpTa_CIhpGzzba42iuaCmCDxHR9bRoLoo9QmlwLpss2NQcU3kDEWKjlqtzYV5MR93MOTLLS0SKJqhqBmX2YbEq-In-YP3T9fSM-lFSHMsCMdXwRh_oNWqVH0FcAGyirWnPc-Kqi8U9Sr8QgarReU"/>
+<div class="relative z-20 text-center px-4">
+<h2 class="font-label tracking-[0.4em] uppercase text-primary-fixed mb-4 text-sm md:text-base neon-text-gold">El Partido del Siglo</h2>
+<h1 class="font-headline font-black italic text-6xl md:text-9xl tracking-tighter text-on-surface leading-none neon-text-red">
+            CUMPLEAÑOS DE <br/> <span class="text-primary-fixed drop-shadow-[0_0_25px_rgba(255,215,0,0.4)]">IRIS</span>
+</h1>
+<p class="font-body text-xl md:text-2xl mt-8 text-on-surface-variant max-w-2xl mx-auto uppercase tracking-widest border-y border-white/10 py-6 inline-block bg-black/20 backdrop-blur-sm px-10">
+            ESMERALDA CECILIA <br/> <span class="font-light text-primary-fixed neon-text-gold">SOLO ACCESO RING-SIDE</span>
+</p>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-primary-fixed text-4xl neon-text-gold">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Invitation Message -->
+<section class="py-24 px-6 relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="max-w-3xl mx-auto text-center relative z-10">
+<div class="mb-12 flex justify-center gap-10">
+<span class="material-symbols-outlined text-primary text-7xl neon-text-red" style="font-variation-settings: 'FILL' 1;">sports_kabaddi</span>
+<span class="material-symbols-outlined text-primary-fixed text-7xl neon-text-gold" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+</div>
+<h3 class="font-headline font-bold text-4xl md:text-5xl text-on-surface mb-8 leading-tight">
+            Dos mundos colisionan en una noche de <span class="italic text-primary-fixed neon-text-gold">Estilo de Campeonato.</span>
+</h3>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed mb-12 max-w-2xl mx-auto">
+            Acompáñanos en la arena donde la disciplina de la cancha se encuentra con la pasión del ring. Una celebración de quince años en proceso, donde cada invitado es parte del once inicial y cada momento es un evento estelar.
+        </p>
+</div>
+</section>
+<!-- Event Details Grid -->
+<section class="py-24 relative z-10" id="arena">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Date Card -->
+<div class="bg-black/60 backdrop-blur-xl border border-white/10 p-10 flex flex-col items-center text-center transition-all hover:border-primary/50 group shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+<span class="material-symbols-outlined text-primary-fixed text-5xl mb-6 group-hover:scale-110 transition-transform neon-text-gold">calendar_today</span>
+<h4 class="font-headline font-bold text-2xl mb-4 text-on-surface">El Saque Inicial</h4>
+<p class="font-body text-on-surface-variant uppercase tracking-widest text-sm">Jueves, 9 de Abril</p>
+<p class="font-label text-primary-fixed mt-2 neon-text-gold">GRAN FINAL TEMPORADA 2026</p>
+</div>
+<!-- Time Card -->
+<div class="bg-black/60 backdrop-blur-xl border border-white/10 p-10 flex flex-col items-center text-center transition-all hover:border-primary/50 group shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+<span class="material-symbols-outlined text-primary-fixed text-5xl mb-6 group-hover:scale-110 transition-transform neon-text-gold">schedule</span>
+<h4 class="font-headline font-bold text-2xl mb-4 text-on-surface">Evento Principal</h4>
+<p class="font-body text-on-surface-variant uppercase tracking-widest text-sm">Puertas: 18:00</p>
+<p class="font-label text-primary-fixed mt-2 neon-text-gold">Campanazo: 19:30</p>
+</div>
+<!-- Venue Card -->
+<div class="bg-black/60 backdrop-blur-xl border border-white/10 p-10 flex flex-col items-center text-center transition-all hover:border-primary/50 group shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+<span class="material-symbols-outlined text-primary-fixed text-5xl mb-6 group-hover:scale-110 transition-transform neon-text-gold">stadium</span>
+<h4 class="font-headline font-bold text-2xl mb-4 text-on-surface">La Arena</h4>
+<p class="font-body text-on-surface-variant uppercase tracking-widest text-sm">Palacio de los Deportes</p>
+<p class="font-label text-primary-fixed mt-2 neon-text-gold" data-location="Mexico City">Ciudad de México</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-24 relative z-10" id="ubicacion">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline font-black italic text-4xl md:text-5xl text-primary-fixed mb-6 tracking-tighter uppercase neon-text-gold">UBICACIÓN DEL EVENTO</h2>
+<div class="flex items-start gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-4xl mt-1 neon-text-red">location_on</span>
+<div>
+<h4 class="font-headline font-bold text-2xl text-on-surface">LA ARENA</h4>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                            Palacio de los Deportes, Ciudad de México<br/>
+                            Av. Viaducto Río de la Piedad y Río Churubusco s/n, Granjas México, 08400.
+                        </p>
+</div>
+</div>
+<a class="inline-flex items-center gap-3 bg-transparent border-2 border-primary-fixed text-primary-fixed hover:bg-primary-fixed hover:text-black px-8 py-4 font-headline font-black text-xl uppercase tracking-widest transition-all duration-300 neon-text-gold shadow-[0_0_20px_rgba(255,215,0,0.2)]" href="https://maps.app.goo.gl/9uTfW9SJQd7yZ4R19" target="_blank">
+<span class="material-symbols-outlined">directions</span>
+                    CÓMO LLEGAR
+                </a>
+</div>
+<div class="w-full md:w-1/2 h-[450px] relative">
+<div class="absolute inset-0 border-4 border-surface-container-highest shadow-[0_0_50px_rgba(255,51,51,0.15)] overflow-hidden">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1m3!1d15053.491325141202!2d-99.09919574458005!3d19.40056150000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc28952445c7%3A0x6a0f7697479633e!2sPalacio%20de%20los%20Deportes!5e0!3m2!1ses!2smx!4v1715632000000!5m2!1ses!2smx" style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2) brightness(0.6);" width="100%">
+</iframe>
+<div class="absolute inset-0 pointer-events-none border-[12px] border-black/60 shadow-[inset_0_0_100px_rgba(0,0,0,0.8)]"></div>
+</div>
+<div class="absolute -bottom-4 -right-4 bg-primary px-6 py-2 font-label text-xs font-black uppercase tracking-[0.3em] text-white shadow-xl">
+                    SEDE OFICIAL
+                </div>
+</div>
+</div>
+</div>
+</section>
+<!-- RSVP Ticket Section -->
+<section class="py-32 px-6 relative overflow-hidden" id="rsvp">
+<div class="absolute inset-0 comic-bg opacity-30"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-primary-fixed/20 mix-blend-overlay"></div>
+<div class="max-w-4xl mx-auto relative z-10">
+<div class="glass-card p-12 rounded-none border-l-8 border-primary flex flex-col md:flex-row items-center gap-12 relative shadow-[0_0_100px_rgba(255,51,51,0.15)]">
+<div class="hidden md:block absolute right-40 top-0 bottom-0 border-r-2 border-dashed border-white/20"></div>
+<div class="flex-grow">
+<h2 class="font-headline font-black text-5xl mb-4 text-primary-fixed italic tracking-tighter uppercase neon-text-gold">CONFIRMA TU ASISTENCIA</h2>
+<p class="font-body text-on-surface/90 mb-8 text-lg font-medium">Sin boleto no hay entrada. Asegura tu lugar en el equipo antes del viernes 20 de marzo.</p>
+<button class="bg-primary/90 hover:bg-primary text-white px-10 py-5 font-headline font-black text-2xl uppercase tracking-[0.2em] animate-pulse-glow transition-all duration-200 w-full md:w-auto shadow-[0_10px_50px_rgba(255,51,51,0.5)] border border-white/20">
+                    CONFIRMAR AHORA
+                </button>
+</div>
+<div class="flex flex-col items-center justify-center rotate-0 md:-rotate-90 md:w-32">
+<div class="font-headline font-black text-5xl text-primary-fixed/40 select-none tracking-tighter">#2026</div>
+<div class="font-label text-[10px] tracking-[0.5em] text-white/40 mt-2 uppercase">PASE PLATINO</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full flex flex-col items-center justify-center gap-6 text-center bg-black py-12 px-8 relative z-10 border-t border-white/5">
+<div class="text-2xl font-black text-primary-fixed font-headline tracking-tighter italic neon-text-gold">ARENA EDITORIAL</div>
+<div class="flex gap-8">
+<a class="font-label text-xs font-medium tracking-[0.2em] uppercase text-white/40 hover:text-primary transition-colors" href="#">Privacidad</a>
+<a class="font-label text-xs font-medium tracking-[0.2em] uppercase text-white/40 hover:text-primary transition-colors" href="#">Términos</a>
+<a class="font-label text-xs font-medium tracking-[0.2em] uppercase text-white/40 hover:text-primary transition-colors" href="#">Contacto</a>
+</div>
+<div class="font-label text-xs font-light tracking-[0.2em] uppercase text-white/20 mt-4">
+        © 2026 ARENA EDITORIAL • LA CANCHA Y LA MÁSCARA
+    </div>
+</footer>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-black/95 backdrop-blur-md border-t border-white/10">
+<a class="flex flex-col items-center justify-center bg-primary text-white rounded-xl px-4 py-1.5 transition-all active:translate-y-[-2px] shadow-[0_0_15px_rgba(255,51,51,0.4)]" href="#arena">
+<span class="material-symbols-outlined">stadium</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-wider">Arena</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/50 px-4 py-1.5 hover:text-primary transition-all" href="#program">
+<span class="material-symbols-outlined">event_note</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-wider">Programa</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/50 px-4 py-1.5 hover:text-primary transition-all" href="#ubicacion">
+<span class="material-symbols-outlined">map</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-wider">Lugar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/50 px-4 py-1.5 hover:text-primary transition-all" href="#rsvp">
+<span class="material-symbols-outlined">confirmation_number</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-wider">Boletos</span>
+</a>
+</nav>
+</body></html>
